@@ -1,0 +1,9 @@
+nav {
+    background-color: #ff4500;
+    color: white;
+    padding: 16px 24px;
+}
+
+nav h1 {
+    font-size: 24px;
+}

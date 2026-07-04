@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar/Navbar";
+import SearchBar from "./components/SearchBar/SearchBar";
+
 function App() {
   return (
-    <div>
-      <h1>Reddit Client</h1>
-    </div>
+    <>
+      <Navbar />
+      <SearchBar />
+    </>
   );
 }
 
