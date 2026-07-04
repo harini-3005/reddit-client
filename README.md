@@ -60,19 +60,21 @@ src/
 
 ## 📸 Screenshots
 
-### Home
+### 🏠 Home Page
 
-![Home](screenshots/home.png)
-
-### React Lane
-
-![Lane 1](screenshots/lane1.png)
-
-### JavaScript Lane
-
-![Lane 2](screenshots/lane2.png)
+![Home Page](screenshots/home.png)
 
 ---
+
+### 📚 React Community Lane
+
+![React Lane](screenshots/lane1.png)
+
+---
+
+### 💻 Multiple Community Lanes
+
+![Multiple Lanes](screenshots/lane2.png)
 
 ## ⚙️ Installation
 
