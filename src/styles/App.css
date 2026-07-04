@@ -1,0 +1,55 @@
+.app {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc, #fef3e7);
+}
+
+.container {
+    width: min(1400px, 95%);
+    margin: 35px auto;
+}
+
+.lanes-grid {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+}
+
+.lanes-container {
+    margin-top: 35px;
+    min-height: 350px;
+    border: 2px dashed #d6d6d6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-text {
+    color: #666;
+    font-size: 20px;
+}
+
+@media (max-width:768px) {
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-container input {
+        max-width: 100%;
+    }
+
+    .lanes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .lane-header h2 {
+        font-size: 28px;
+    }
+
+}

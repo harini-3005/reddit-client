@@ -1,9 +1,17 @@
-nav {
-    background-color: #ff4500;
+.navbar {
+    background: linear-gradient(90deg, #ff4500, #ff6a00);
     color: white;
-    padding: 16px 24px;
+    padding: 22px 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .15);
 }
 
-nav h1 {
-    font-size: 24px;
+.logo {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: .85;
+    margin-top: 5px;
 }

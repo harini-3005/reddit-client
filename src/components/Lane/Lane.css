@@ -1,0 +1,41 @@
+.lane {
+    background: rgba(255, 255, 255, .9);
+    backdrop-filter: blur(12px);
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.lane:hover {
+    transform: translateY(-6px);
+}
+
+.lane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lane-header h2 {
+    font-size: 34px;
+}
+
+.lane-header button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    background: #ff3b30;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.loading {
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+}

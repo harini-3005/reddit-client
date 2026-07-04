@@ -1,23 +1,34 @@
 import { useState } from "react";
 import "./SearchBar.css";
 
-function SearchBar() {
+function SearchBar({ onAddLane }) {
     const [subreddit, setSubreddit] = useState("");
 
-    const handleAdd = () => {
-        console.log(subreddit);
+    const handleSubmit = () => {
+        if (!subreddit.trim()) return;
+
+        onAddLane(subreddit);
+
+        setSubreddit("");
     };
 
     return (
-        <div className="search-bar">
+        <div className="search-container">
             <input
                 type="text"
-                placeholder="Enter subreddit name..."
+                placeholder="Enter subreddit..."
                 value={subreddit}
                 onChange={(e) => setSubreddit(e.target.value)}
+                onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                        handleSubmit();
+                    }
+                }}
             />
 
-            <button onClick={handleAdd}>Add</button>
+            <button onClick={handleSubmit}>
+                Add Lane
+            </button>
         </div>
     );
 }
